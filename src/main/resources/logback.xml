@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- Silence Kafka client internal noise; show only WARN+ from kafka libs -->
+    <logger name="org.apache.kafka" level="WARN"/>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

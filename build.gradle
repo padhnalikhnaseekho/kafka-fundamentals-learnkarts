@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.learnkarts'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:4.0.0'
+    implementation 'ch.qos.logback:logback-classic:1.5.6'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+}
+
+application {
+    mainClass = 'com.learnkarts.KafkaFundamentalsApp'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.learnkarts.KafkaFundamentalsApp'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
