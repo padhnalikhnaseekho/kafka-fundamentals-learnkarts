@@ -1,6 +1,6 @@
-package com.learnkarts.module4;
+package edu.aniruddh.module4;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 

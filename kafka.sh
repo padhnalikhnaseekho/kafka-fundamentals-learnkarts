@@ -5,8 +5,8 @@ set -euo pipefail
 KAFKA_HOME="${KAFKA_HOME:-$HOME/kafka}"
 CONFIG="$KAFKA_HOME/config/server.properties"
 LOG_DIR="${LOG_DIR:-/tmp/kraft-combined-logs}"
-PID_FILE="/tmp/kafka-learnkarts.pid"
-SERVER_LOG="/tmp/kafka-learnkarts.log"
+PID_FILE="/tmp/kafka-aniruddh.pid"
+SERVER_LOG="/tmp/kafka-aniruddh.log"
 BOOTSTRAP_PORT="${BOOTSTRAP_PORT:-9092}"
 
 # ── helpers ────────────────────────────────────────────────────────────────────

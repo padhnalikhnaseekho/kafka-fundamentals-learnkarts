@@ -1,6 +1,6 @@
-package com.learnkarts.module1;
+package edu.aniruddh.module1;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 
 /**
  * Module 1 — Big Data and Messaging Fundamentals.

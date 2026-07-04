@@ -1,6 +1,6 @@
-package com.learnkarts.module3;
+package edu.aniruddh.module3;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 import org.apache.kafka.clients.admin.*;
 import org.apache.kafka.common.config.TopicConfig;
 

@@ -1,6 +1,6 @@
-package com.learnkarts.module7;
+package edu.aniruddh.module7;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -61,18 +61,18 @@ public class OffsetManagementDemo {
         KafkaFundamentalsApp.section("CLI offset management");
         System.out.println("  # Describe offsets for a consumer group");
         System.out.println("  bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 \\");
-        System.out.println("      --describe --group learnkarts-demo-group");
+        System.out.println("      --describe --group aniruddh-demo-group");
         System.out.println();
         System.out.println("  # Reset offsets to earliest (requires group to be inactive)");
         System.out.println("  bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 \\");
-        System.out.println("      --group learnkarts-demo-group --topic learnkarts-demo \\");
+        System.out.println("      --group aniruddh-demo-group --topic kafka-demo \\");
         System.out.println("      --reset-offsets --to-earliest --execute");
     }
 
     private Properties consumerProps(String groupSuffix, boolean autoCommit) {
         Properties p = new Properties();
         p.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrap);
-        p.put(ConsumerConfig.GROUP_ID_CONFIG, "learnkarts-offset-" + groupSuffix);
+        p.put(ConsumerConfig.GROUP_ID_CONFIG, "aniruddh-offset-" + groupSuffix);
         p.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         p.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         p.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");

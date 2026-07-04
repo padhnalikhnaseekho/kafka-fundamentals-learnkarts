@@ -1,4 +1,4 @@
-# Kafka Fundamentals — LearnKarts Demo App
+# Kafka Fundamentals — Aniruddh's Learning Code
 
 Java 21 + Gradle application that walks through every module of the *Apache Kafka Fundamentals* Coursera syllabus using **Kafka 4.3.1** (KRaft, no ZooKeeper).
 
@@ -23,7 +23,7 @@ coursera-learnkarts/
 ├── gradlew / gradlew.bat
 ├── kafka_fundamentals_syllabus.md   ← annotated for Kafka 4.x
 ├── README.md                        ← this file
-└── src/main/java/com/learnkarts/
+└── src/main/java/edu/aniruddh/
     ├── KafkaFundamentalsApp.java    ← main entry point
     ├── module1/BigDataMessagingDemo.java
     ├── module2/KafkaArchitectureDemo.java
@@ -90,7 +90,7 @@ Uses `AdminClient` to introspect a live cluster:
 
 ### Module 3 — Cluster Setup (KRaft edition)
 - Explains the KRaft single-node startup sequence with exact commands
-- Creates the demo topic `learnkarts-demo` (3 partitions, RF=1) via `AdminClient`
+- Creates the demo topic `kafka-demo` (3 partitions, RF=1) via `AdminClient`
 - Describes the topic's partition→leader→ISR mapping
 - Shows Kafka 4.x CLI equivalents (no `--zookeeper` flag)
 
@@ -149,18 +149,18 @@ KAFKA=~/kafka/bin
 
 # Topic management
 $KAFKA/kafka-topics.sh --bootstrap-server localhost:9092 --list
-$KAFKA/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic learnkarts-demo
+$KAFKA/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic kafka-demo
 
 # Produce from terminal
-$KAFKA/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic learnkarts-demo
+$KAFKA/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic kafka-demo
 
 # Consume from terminal
 $KAFKA/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
-    --topic learnkarts-demo --from-beginning
+    --topic kafka-demo --from-beginning
 
 # Consumer group offsets
 $KAFKA/kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
-    --describe --group learnkarts-demo-group
+    --describe --group aniruddh-demo-group
 
 # KRaft quorum status
 $KAFKA/kafka-metadata-quorum.sh --bootstrap-server localhost:9092 describe --status

@@ -1,17 +1,17 @@
-package com.learnkarts;
+package edu.aniruddh;
 
-import com.learnkarts.module1.BigDataMessagingDemo;
-import com.learnkarts.module2.KafkaArchitectureDemo;
-import com.learnkarts.module3.ClusterSetupDemo;
-import com.learnkarts.module4.ProducerArchitectureDemo;
-import com.learnkarts.module5.SerializationPartitioningDemo;
-import com.learnkarts.module6.ConsumerArchitectureDemo;
-import com.learnkarts.module7.OffsetManagementDemo;
+import edu.aniruddh.module1.BigDataMessagingDemo;
+import edu.aniruddh.module2.KafkaArchitectureDemo;
+import edu.aniruddh.module3.ClusterSetupDemo;
+import edu.aniruddh.module4.ProducerArchitectureDemo;
+import edu.aniruddh.module5.SerializationPartitioningDemo;
+import edu.aniruddh.module6.ConsumerArchitectureDemo;
+import edu.aniruddh.module7.OffsetManagementDemo;
 
 public class KafkaFundamentalsApp {
 
     static final String BOOTSTRAP = "localhost:9092";
-    static final String DEMO_TOPIC = "learnkarts-demo";
+    static final String DEMO_TOPIC = "kafka-demo";
 
     public static void main(String[] args) throws Exception {
         banner("Apache Kafka 4.x Fundamentals — LearnKarts Demo");

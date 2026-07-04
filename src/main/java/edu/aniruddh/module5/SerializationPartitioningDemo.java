@@ -1,6 +1,6 @@
-package com.learnkarts.module5;
+package edu.aniruddh.module5;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.Cluster;
 import org.apache.kafka.common.serialization.Serializer;

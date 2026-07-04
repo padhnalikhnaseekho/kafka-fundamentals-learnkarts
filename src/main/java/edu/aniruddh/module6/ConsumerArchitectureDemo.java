@@ -1,6 +1,6 @@
-package com.learnkarts.module6;
+package edu.aniruddh.module6;
 
-import com.learnkarts.KafkaFundamentalsApp;
+import edu.aniruddh.KafkaFundamentalsApp;
 import org.apache.kafka.clients.admin.*;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
@@ -23,7 +23,7 @@ public class ConsumerArchitectureDemo {
 
     private final String bootstrap;
     private final String topic;
-    static final String GROUP_ID = "learnkarts-demo-group";
+    static final String GROUP_ID = "aniruddh-demo-group";
 
     public ConsumerArchitectureDemo(String bootstrap, String topic) {
         this.bootstrap = bootstrap;

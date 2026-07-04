@@ -65,7 +65,7 @@ This course covers the core mechanics of Apache Kafka, distributed messaging con
 > **[Kafka 4.x] New tool:** `bin/kafka-metadata-quorum.sh --bootstrap-server localhost:9092 describe --status`
 > replaces ZooKeeper-based cluster inspection.
 
-> **Demo:** `module3/ClusterSetupDemo.java` — creates topic `learnkarts-demo` via `AdminClient`, shows partition/leader/ISR layout.
+> **Demo:** `module3/ClusterSetupDemo.java` — creates topic `kafka-demo` via `AdminClient`, shows partition/leader/ISR layout.
 
 ---
 
